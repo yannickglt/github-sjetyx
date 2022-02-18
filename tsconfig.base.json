@@ -1,0 +1,24 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@stackblitz-nx-angular/scope1/feature-lib1": ["libs/scope1/feature-lib1/src/index.ts"],
+      "@angular/*": ["../node_modules/@angular/*"],
+      "@mondosha1/*": ["../node_modules/@mondosha1/*"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

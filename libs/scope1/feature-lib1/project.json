@@ -1,0 +1,23 @@
+{
+  "projectType": "library",
+  "root": "libs/scope1/feature-lib1",
+  "sourceRoot": "libs/scope1/feature-lib1/src",
+  "prefix": "stackblitz-nx-angular",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/scope1/feature-lib1"],
+      "options": {
+        "jestConfig": "libs/scope1/feature-lib1/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["libs/scope1/feature-lib1/src/**/*.ts", "libs/scope1/feature-lib1/src/**/*.html"]
+      }
+    }
+  },
+  "tags": []
+}
